@@ -6,13 +6,13 @@ const projects = [
   {
     title: 'Fresh & Natural',
     category: 'Web Development',
-    image: 'public/assets/images/freshandnatural-min.jpg',
+    image: '../assets/images/freshandnatural-min.jpg',
     link: 'https://shiny-shortbread-2c2f0b.netlify.app/'
   },
   {
     title: 'Burger Website',
     category: 'Web Development',
-    image: 'public/assets/images/burgerwebsite-min.png',
+    image: '../assets/images/burgerwebsite-min.png',
     link: 'https://burgerwebsitetemplate.netlify.app/'
   },
   {
