@@ -5,8 +5,31 @@ import { useNavLinkColor } from '../hooks/useNavLinkColor';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false);
+  const [isScrolled, setIsScrolled] = React.useState(false);
   const location = useLocation();
   const { textColor, hoverColor, logoTextColor, menuIconColor, mobileMenuBg } = useNavLinkColor();
+
+  const isServicesPage = location.pathname === '/services';
+  const linkTextColor = isServicesPage 
+    ? isScrolled ? 'text-white' : 'text-[#00274D]'
+    : textColor;
+  const linkHoverColor = isServicesPage
+    ? isScrolled ? 'hover:text-[#00A9E0]' : 'hover:text-[#00A9E0]'
+    : hoverColor;
+  const dynamicLogoTextColor = isServicesPage
+    ? isScrolled ? 'text-white' : 'text-[#00274D]'
+    : logoTextColor;
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      // Adjust this value based on when you want the color to change
+      const scrollThreshold = 100;
+      setIsScrolled(window.scrollY > scrollThreshold);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   React.useEffect(() => {
     window.scrollTo(0, 0);
@@ -27,17 +50,17 @@ export default function Navbar() {
                 <div className="w-8 h-8 bg-[#00274D] relative">
                   <div className="absolute bottom-0 right-0 w-3 h-3 bg-[#00A9E0]" />
                 </div>
-                <span className={`text-2xl font-bold ${logoTextColor}`}>BLANQ</span>
+                <span className={`text-2xl font-bold ${dynamicLogoTextColor}`}>BLANQ</span>
               </div>
             </Link>
           </div>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              <Link to="/" className={`${textColor} ${hoverColor} transition-colors`}>Home</Link>
-              <Link to="/about" className={`${textColor} ${hoverColor} transition-colors`}>About</Link>
-              <Link to="/services" className={`${textColor} ${hoverColor} transition-colors`}>Services</Link>
-              <Link to="/portfolio" className={`${textColor} ${hoverColor} transition-colors`}>Portfolio</Link>
-              <Link to="/contact" className={`${textColor} ${hoverColor} transition-colors`}>Contact</Link>
+              <Link to="/" className={`${linkTextColor} ${linkHoverColor} transition-colors`}>Home</Link>
+              <Link to="/about" className={`${linkTextColor} ${linkHoverColor} transition-colors`}>About</Link>
+              <Link to="/services" className={`${linkTextColor} ${linkHoverColor} transition-colors`}>Services</Link>
+              <Link to="/portfolio" className={`${linkTextColor} ${linkHoverColor} transition-colors`}>Portfolio</Link>
+              <Link to="/contact" className={`${linkTextColor} ${linkHoverColor} transition-colors`}>Contact</Link>
             </div>
           </div>
           <div className="md:hidden">
@@ -50,11 +73,11 @@ export default function Navbar() {
       {isOpen && (
         <div className={`md:hidden ${mobileMenuBg} backdrop-blur-lg`}>
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <Link to="/" onClick={handleLinkClick} className={`block px-3 py-2 ${textColor} ${hoverColor}`}>Home</Link>
-            <Link to="/about" onClick={handleLinkClick} className={`block px-3 py-2 ${textColor} ${hoverColor}`}>About</Link>
-            <Link to="/services" onClick={handleLinkClick} className={`block px-3 py-2 ${textColor} ${hoverColor}`}>Services</Link>
-            <Link to="/portfolio" onClick={handleLinkClick} className={`block px-3 py-2 ${textColor} ${hoverColor}`}>Portfolio</Link>
-            <Link to="/contact" onClick={handleLinkClick} className={`block px-3 py-2 ${textColor} ${hoverColor}`}>Contact</Link>
+            <Link to="/" onClick={handleLinkClick} className={`block px-3 py-2 ${linkTextColor} ${linkHoverColor}`}>Home</Link>
+            <Link to="/about" onClick={handleLinkClick} className={`block px-3 py-2 ${linkTextColor} ${linkHoverColor}`}>About</Link>
+            <Link to="/services" onClick={handleLinkClick} className={`block px-3 py-2 ${linkTextColor} ${linkHoverColor}`}>Services</Link>
+            <Link to="/portfolio" onClick={handleLinkClick} className={`block px-3 py-2 ${linkTextColor} ${linkHoverColor}`}>Portfolio</Link>
+            <Link to="/contact" onClick={handleLinkClick} className={`block px-3 py-2 ${linkTextColor} ${linkHoverColor}`}>Contact</Link>
           </div>
         </div>
       )}
