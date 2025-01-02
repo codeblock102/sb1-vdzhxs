@@ -32,9 +32,7 @@ export default function Contact() {
                 </p>
               </div>
             </div>
-            <div className="flex items-start space-x-4">
-              <MapPin className="w-6 h-6 text-[#00A9E0]" />
-            </div>
+            
           </div>
         </div>
       </div>
