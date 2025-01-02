@@ -47,10 +47,8 @@ export default function Navbar() {
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0" onClick={handleLinkClick}>
               <div className="flex items-center gap-2">
-                <div className="w-8 h-8 bg-[#00274D] relative">
-                  <div className="absolute bottom-0 right-0 w-3 h-3 bg-[#00A9E0]" />
-                </div>
-                <span className={`text-2xl font-bold ${dynamicLogoTextColor}`}>BLANQ</span>
+                <img src="public\assets\images\logo.png" alt="" width={40} height={40} />
+                <span className={`text-2xl font-bold  ml-2 ${dynamicLogoTextColor}`}>BLANQ</span>
               </div>
             </Link>
           </div>

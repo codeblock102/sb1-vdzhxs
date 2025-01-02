@@ -21,22 +21,19 @@ export default function Contact() {
               <Mail className="w-6 h-6 text-[#00A9E0]" />
               <div>
                 <h3 className="text-lg font-semibold text-[#00274D]">Email Us</h3>
-                <p className="text-gray-600">contact@blanqagency.com</p>
+                <p className="text-gray-600">admin@blanqdigital.com</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
               <Phone className="w-6 h-6 text-[#00A9E0]" />
               <div>
                 <h3 className="text-lg font-semibold text-[#00274D]">Call Us</h3>
-                <p className="text-gray-600">+1 (555) 123-4567</p>
+                <p className="text-gray-600">+1 (438) 867-4812
+                </p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
               <MapPin className="w-6 h-6 text-[#00A9E0]" />
-              <div>
-                <h3 className="text-lg font-semibold text-[#00274D]">Visit Us</h3>
-                <p className="text-gray-600">123 Web Street, Digital City, 12345</p>
-              </div>
             </div>
           </div>
         </div>
