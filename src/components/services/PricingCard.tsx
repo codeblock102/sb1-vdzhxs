@@ -40,7 +40,7 @@ export default function PricingCard({
         <h3 className="text-xl font-semibold text-white mb-3">{title}</h3>
         <p className="text-gray-300 mb-4">{description}</p>
         
-        <div className="flex justify-center space-x-4 mb-8">
+        {/* <div className="flex justify-center space-x-4 mb-8">
           <button
             className={`px-4 py-2 rounded-lg text-sm ${
               billingCycle === 'monthly' ? 'bg-[#00A9E0] text-white' : 'text-gray-400'
@@ -57,7 +57,7 @@ export default function PricingCard({
           >
             One-time
           </button>
-        </div>
+        </div> */}
 
         <div className="space-y-2 mb-8">
           {features.map((feature, idx) => (
@@ -69,7 +69,7 @@ export default function PricingCard({
         </div>
       </div>
       <div className="mt-6 pt-4 border-t border-white/10">
-        <p className="text-2xl font-bold text-white mb-2">
+        {/* <p className="text-2xl font-bold text-white mb-2">
           ${getPrice()}
           <span className="text-sm font-normal text-gray-400 ml-2">{getBillingText()}</span>
         </p>
@@ -77,7 +77,7 @@ export default function PricingCard({
           <p className="text-sm text-[#00A9E0] mb-2 -mt-2">
             +${setupFee} setup fee
           </p>
-        )}
+        )} */}
         <button className="btn-primary w-full">Get Started</button>
       </div>
     </div>
