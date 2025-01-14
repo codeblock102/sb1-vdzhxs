@@ -28,7 +28,7 @@ export default function Contact() {
               <Phone className="w-6 h-6 text-[#00A9E0]" />
               <div>
                 <h3 className="text-lg font-semibold text-[#00274D]">Call Us</h3>
-                <p className="text-gray-600">+1 (438) 867-4812
+                <p className="text-gray-600">+1 (438) 867-4912
                 </p>
               </div>
             </div>
