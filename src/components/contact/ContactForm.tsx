@@ -53,7 +53,6 @@ export default function ContactForm() {
           required
         />
       
-      
         <label htmlFor="email" className="block text-[#00274D] mb-2">Email</label>
         <input
           type="email"
