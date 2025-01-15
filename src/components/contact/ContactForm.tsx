@@ -37,6 +37,8 @@ export default function ContactForm() {
         <label htmlFor="name" className="block text-[#00274D] mb-2">Name</label>
         <input
           type="text"
+          id="name"
+          name="name"
           value={formData.name}
           onChange={handleChange}
           className="w-full px-4 py-3 rounded-lg bg-white/50 border border-gray-300 focus:outline-none focus:border-[#00A9E0]"
@@ -48,6 +50,8 @@ export default function ContactForm() {
         <label htmlFor="email" className="block text-[#00274D] mb-2">Email</label>
         <input
           type="email"
+          id="email"
+          name="email"
           value={formData.email}
           onChange={handleChange}
           className="w-full px-4 py-3 rounded-lg bg-white/50 border border-gray-300 focus:outline-none focus:border-[#00A9E0]"
@@ -58,6 +62,8 @@ export default function ContactForm() {
       <div>
         <label htmlFor="subject" className="block text-[#00274D] mb-2">Subject</label>
         <select
+          id="subject"
+          name="subject"
           value={formData.subject}
           onChange={handleChange}
           className="w-full px-4 py-3 rounded-lg bg-white/50 border border-gray-300 focus:outline-none focus:border-[#00A9E0]"
@@ -74,6 +80,8 @@ export default function ContactForm() {
       <div>
         <label htmlFor="message" className="block text-[#00274D] mb-2">Message</label>
         <textarea
+          id="message"
+          name="message"
           value={formData.message}
           onChange={handleChange}
           className="w-full px-4 py-3 rounded-lg bg-white/50 border border-gray-300 focus:outline-none focus:border-[#00A9E0] h-32"
