@@ -89,6 +89,7 @@ export default function ContactForm() {
           required
         ></textarea>
       </div>
+      <input type="hidden" name="form-name" value="name_of_my_form" />
       <button type="submit" className="btn-primary w-full">
         Send Message
       </button>
