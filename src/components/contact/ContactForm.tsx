@@ -40,7 +40,7 @@ export default function ContactForm() {
   return (
     <form name ="contact-form" onSubmit={handleSubmit} className="space-y-6" data-netlify="true" >
       <input type="hidden" name="form-name" value="contact-form" />
-      <div>
+      
         <label htmlFor="name" className="block text-[#00274D] mb-2">Name</label>
         <input
           type="text"
@@ -52,8 +52,8 @@ export default function ContactForm() {
           placeholder="Your name"
           required
         />
-      </div>
-      <div>
+      
+      
         <label htmlFor="email" className="block text-[#00274D] mb-2">Email</label>
         <input
           type="email"
@@ -65,8 +65,8 @@ export default function ContactForm() {
           placeholder="your@email.com"
           required
         />
-      </div>
-      <div>
+  
+      
         <label htmlFor="subject" className="block text-[#00274D] mb-2">Subject</label>
         <select
           id="subject"
@@ -83,8 +83,8 @@ export default function ContactForm() {
             </option>
           ))}
         </select>
-      </div>
-      <div>
+    
+      
         <label htmlFor="message" className="block text-[#00274D] mb-2">Message</label>
         <textarea
           id="message"
@@ -95,7 +95,7 @@ export default function ContactForm() {
           placeholder="Your message"
           required
         ></textarea>
-      </div>
+      
       <button type="submit" className="btn-primary w-full">
         Send Message
       </button>
