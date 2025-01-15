@@ -32,7 +32,7 @@ export default function ContactForm() {
   };
 
   return (
-    <form name ="contact-form" onSubmit={handleSubmit} className="space-y-6" data-netlify="true" >
+    <form name ="contact-form"  className="space-y-6" data-netlify="true" >
       <div>
         <label htmlFor="name" className="block text-[#00274D] mb-2">Name</label>
         <input
@@ -89,7 +89,6 @@ export default function ContactForm() {
           required
         ></textarea>
       </div>
-      <input type="hidden" name="form-name" value="name_of_my_form" />
       <button type="submit" className="btn-primary w-full">
         Send Message
       </button>

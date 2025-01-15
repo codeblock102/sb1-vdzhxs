@@ -9,6 +9,19 @@
   </head>
   <body>
     <div id="root"></div>
+    <form action="" name ="contact-form" id="contact-form" method="post" data-netlify="true">
+      <input type="text" name="name" id="name">
+      <input type="text" name="email" id="email">
+      <textarea name="message" id="message"></textarea>
+      <input type="hidden" name="form-name" value="name_of_my_form" />
+    </form>
+    <select name="subjects" id="subjects" form="">
+      <option value="website creation">Website Creation</option>
+      <option value="website redesign">Website Redesign</option>
+      <option value="seo services">SEO Services</option>
+      <option value="website maintenance">Website Maintenance</option>
+      <option value="custom development">Custom Development</option>
+    </select>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
