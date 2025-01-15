@@ -32,7 +32,7 @@ export default function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6">
+    <form onSubmit={handleSubmit} className="space-y-6" netlify>
       <div>
         <label htmlFor="name" className="block text-[#00274D] mb-2">Name</label>
         <input
