@@ -31,6 +31,11 @@ export default function ContactForm() {
     })
       .then(() => alert("Success!"))
       .catch((error) => alert("Error: " + error));
+
+      setFormData({name: "",
+        email: "",
+        subject: "",
+        message: "",})
   };
 
   const handleChange = (
