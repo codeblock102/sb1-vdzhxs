@@ -21,7 +21,7 @@ export default function Contact() {
               <Mail className="w-6 h-6 text-[#00A9E0]" />
               <div>
                 <h3 className="text-lg font-semibold text-[#00274D]">Email Us</h3>
-                <p className="text-gray-600">admin@blanqdigital.com</p>
+                <p className="text-gray-600">aqkuns7@gmail.com</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
