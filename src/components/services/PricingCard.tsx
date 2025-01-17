@@ -1,5 +1,6 @@
 import React from 'react';
 import { LucideIcon } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 interface PricingOption {
   monthly: number;
@@ -78,7 +79,13 @@ export default function PricingCard({
             +${setupFee} setup fee
           </p>
         )} */}
-        <button className="btn-primary w-full">Get Started</button>
+        <Link
+            to="/book"
+            className="btn-primary w-full"
+          >
+            Get Started 
+
+          </Link>
       </div>
     </div>
   );

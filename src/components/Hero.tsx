@@ -20,7 +20,7 @@ export default function Hero() {
               Transform your online presence with our expert web design and development services. We build beautiful, functional websites that drive results.
             </p>
             <div style={{ animationDelay: '0.7s' }}>
-              <a href="#contact" className="btn-primary">
+              <a href="/book" className="btn-primary">
                 Get Started
                 <ArrowRight size={20} className="ml-2" />
               </a>

@@ -12,7 +12,7 @@ export default function ServicesCTA() {
             Let's discuss how we can help your business grow with our web solutions
           </p>
           <Link
-            to="/contact"
+            to="/book"
             className="btn-primary"
           >
             Get Started Today

@@ -16,11 +16,12 @@ const projects = [
     link: 'https://burgerwebsitetemplate.netlify.app/'
   },
   {
-    title: 'Mobile App Interface',
-    category: 'UI/UX Design',
+    title: "A Dos D'anne",
+    category: 'Web Development',
     image: 'https://images.unsplash.com/photo-1661956602116-aa6865609028?auto=format&fit=crop&w=800&q=80',
-    link: '#'
+    link: 'https://adosdanne.art/'
   }
+  
 ];
 
 export default function Portfolio({ projectClickHandler }: PortfolioProps) {

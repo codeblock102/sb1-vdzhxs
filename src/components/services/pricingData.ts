@@ -3,19 +3,21 @@ import { Globe, Rocket, Crown } from 'lucide-react';
 export const services = [
   {
     icon: Globe,
-    title: 'Blanq Basics',
-    description: 'Perfect for startups or small businesses wanting a professional web presence.',
+    title: 'Blanq Lite Package',
+    description: 'Your simple, budget-friendly solution for growing your online presence.',
     pricing: {
       monthly: 200,
       oneTime: 2900
     },
     setupFee: 500,
     features: [
-      'Custom 5-page website',
-      'Mobile-friendly design',
-      'Basic SEO setup (metadata, keywords)',
-      'Domain and hosting assistance',
-      'Monthly maintenance and updates (up to 2 small changes)'
+      'Basic Website Setup & Design',
+      'Social Media Management for one platform',
+      'Basic SEO',
+      'Performance tracking',
+      'Performance optimization',
+      'Basic email marketing',
+      'Email support and consultation (1-2 hours/month).'
     ]
   },
   {

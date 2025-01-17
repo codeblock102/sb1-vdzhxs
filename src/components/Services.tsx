@@ -1,4 +1,3 @@
-import React from 'react';
 import PricingCard from './services/PricingCard';
 import AddOnCard from './services/AddOnCard';
 import CustomPricingCard from './services/CustomPricingCard';
