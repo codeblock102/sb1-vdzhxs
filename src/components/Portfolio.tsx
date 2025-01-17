@@ -18,7 +18,7 @@ const projects = [
   {
     title: "A Dos D'anne",
     category: 'Web Development',
-    image: 'https://images.unsplash.com/photo-1661956602116-aa6865609028?auto=format&fit=crop&w=800&q=80',
+    image: '/assets/images/adosdanne.jpg',
     link: 'https://adosdanne.art/'
   }
   
