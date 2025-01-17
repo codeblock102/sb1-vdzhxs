@@ -7,6 +7,9 @@ import ServicesPage from './pages/ServicesPage';
 import PortfolioPage from './pages/PortfolioPage';
 import ContactPage from './pages/ContactPage';
 import AboutPage from './pages/AboutPage';
+import BookingPage from './pages/BookingPage';
+import FloatingCTA from './FloatingCTA';
+
 
 function ScrollToTop() {
   const location = useLocation();
@@ -29,8 +32,10 @@ function App() {
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/portfolio" element={<PortfolioPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/book" element={<BookingPage />} />
           <Route path="/about" element={<AboutPage />} />
         </Routes>
+        <FloatingCTA />
         <Footer />
       </div>
     </Router>

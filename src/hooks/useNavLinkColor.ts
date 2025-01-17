@@ -5,7 +5,7 @@ export function useNavLinkColor() {
   
   const isLightBackground = () => {
     // Pages with light backgrounds
-    const lightBgRoutes = ['/', '/about', '/contact','/portfolio'];
+    const lightBgRoutes = ['/', '/about', '/contact','/portfolio','/book'];
     return lightBgRoutes.includes(location.pathname);
   };
 

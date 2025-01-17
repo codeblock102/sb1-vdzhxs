@@ -42,6 +42,30 @@ body {
   }
 }
 
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 169, 224, 0.7);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(0, 169, 224, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 169, 224, 0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
 .fade-in {
   opacity: 0;
   animation: fadeIn 0.6s ease-out forwards;
@@ -75,4 +99,20 @@ body {
 .stagger-fade-in > * {
   opacity: 0;
   animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.book-call-btn {
+  @apply relative overflow-hidden;
+  background: linear-gradient(
+    90deg,
+    #00A9E0,
+    #0088B3,
+    #00A9E0
+  );
+  background-size: 200% 100%;
+  animation: shimmer 3s linear infinite;
+}
+
+.book-call-btn:hover {
+  animation: pulse 1.5s infinite, shimmer 3s linear infinite;
 }
