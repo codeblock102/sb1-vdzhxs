@@ -3,21 +3,24 @@ import { Plus } from 'lucide-react';
 
 interface AddOnCardProps {
   title: string;
-  price: number;
-  unit: string;
+  features: string[];
 }
 
-export default function AddOnCard({ title, price, unit }: AddOnCardProps) {
+export default function AddOnCard({ title, features }: AddOnCardProps) {
   return (
-    <div className="card p-4 text-center">
-      <Plus className="w-8 h-8 text-[#00A9E0] mb-3 mx-auto" />
-      <h4 className="text-white font-semibold mb-2">{title}</h4>
-      {/* <p className="text-xl font-bold text-[#00A9E0]">
-        ${price}
-        <span className="text-sm font-normal text-gray-400 block">
-          {unit}
-        </span>
-      </p> */}
+    <div className="card p-6 text-center h-full">
+      <div>
+        <Plus className="w-8 h-8 text-[#00A9E0] mb-3 mx-auto" />
+        <h4 className="text-white font-semibold mb-4">{title}</h4>
+        <ul className="text-left space-y-2">
+          {features.map((feature, index) => (
+            <li key={index} className="text-gray-300 text-sm flex items-start">
+              <span className="text-[#00A9E0] mr-2">•</span>
+              {feature}
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }

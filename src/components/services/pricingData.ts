@@ -22,62 +22,73 @@ export const services = [
   },
   {
     icon: Rocket,
-    title: 'Blanq Boost',
-    description: 'Ideal for businesses focused on growth and expanding their reach.',
+    title: 'Blanq Foundations',
+    description: 'The Stress-Free Website Success Pack. Your hands-off solution for a stunning, business-growing website.',
     pricing: {
       monthly: 500,
       oneTime: 6900
     },
     setupFee: 500,
     features: [
-      'Everything in Blanq Basics, plus:',
-      'Advanced SEO optimization',
-      'Google Analytics integration',
-      'Blog or news section setup',
-      '3 monthly updates or revisions',
-      'Social media integration'
+      'Complete branding (logos, colors, visuals)',
+      'Fully customized, mobile-optimized website',
+      'Comprehensive SEO and performance optimization.',
+      'Monthly updates, security monitoring, and analytics dashboards.',
+      'Automated tools for hassle-free management.',
     ]
   },
   {
     icon: Crown,
-    title: 'Blanq Brilliance',
-    description: 'A complete solution for thriving businesses seeking premium features and ongoing support.',
+    title: 'Blanq Freedom Shift',
+    description: ' Unlock the power of automation and scalability for your online business.',
     pricing: {
       monthly: 1000,
       oneTime: 13900
     },
     setupFee: 500,
     features: [
-      'Everything in Blanq Boost, plus:',
-      'E-commerce functionality',
-      'Monthly performance reports',
-      'Full-scale branding integration',
-      'Priority support',
-      'Up to 5 content updates monthly',
-      'Enhanced security features'
+      'Seamless platform migration with no downtime',
+      'Advanced automation (inventory, email marketing, etc.)',
+      'Fully optimized website with performance tracking',
+      '3 months of support, prebuilt campaigns, and updates',
     ]
   }
 ];
 
 export const addOns = [
   {
-    title: 'Additional website pages',
-    price: 400,
-    unit: 'per page'
+    title: 'Design-Ready Website Kit',
+    features: [
+      'Professional branding: logos, banners, and visuals crafted for your business.',
+      'Sleek, modern website design optimized for user experience.',
+      "High-quality assets tailored to your brand's identity",
+    ]
   },
   {
-    title: 'Social media marketing',
-    price: 100,
-    unit: 'per month'
+    title: 'Social Media Growth Kit',
+    features: [
+      'Custom campaigns to grow your audience and drive engagement.',
+      'Automated scheduling for consistent posting.',
+      'Engaging posts that turn followers into loyal customers.',
+    ]
   },
   {
     title: 'Analytics and reporting',
-    price: 200,
-    unit: 'per month'
+    features: [
+      'Comprehensive visitor behavior analysis',
+      'Conversion tracking setup',
+      'Custom dashboard creation',
+      'Monthly detailed performance reports',
+    ]
   },
   {
     title: 'SEO services',
-    price: 150,
-    unit: 'per month starting from'
+    features: [
+      'In-depth keyword research',
+      'On-page optimization',
+      'Technical SEO improvements',
+      'Monthly ranking reports',
+      'Content optimization strategy'
+    ]
   }
 ];
