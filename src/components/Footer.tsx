@@ -12,9 +12,6 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           <div>
             <Link to="/" className="flex items-center gap-2 mb-4 group">
-              <div className="w-8 h-8 bg-[#00274D] relative group-hover:shadow-lg transition-shadow">
-                <div className="absolute bottom-0 right-0 w-3 h-3 bg-[#00A9E0]" />
-              </div>
               <span className={`text-2xl font-bold group-hover:text-[#00A9E0] transition-colors ${isServicesPage ? 'text-[#00274D]' : 'text-white'}`}>BLANQ</span>
             </Link>
             <p className={isServicesPage ? 'text-gray-600' : 'text-gray-300'}>Creating digital experiences that inspire and engage.</p>

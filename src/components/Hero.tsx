@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <section id="home" className="min-h-screen flex items-center relative top-20 lg:top-0 overflow-hidden bg-[#F5F5F5]">
+    <section id="home" className="min-h-screen flex items-center relative top-24 lg:top-0 overflow-hidden bg-[#F5F5F5]">
       <div className="absolute inset-0">
         <div className="absolute top-20 left-20 w-96 h-96 bg-[#00A9E0]/20 rounded-full filter blur-3xl fade-in" style={{ animationDelay: '0.3s' }} />
         <div className="absolute bottom-20 right-20 w-96 h-96 bg-[#00274D]/20 rounded-full filter blur-3xl fade-in" style={{ animationDelay: '0.6s' }} />
