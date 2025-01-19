@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { ArrowRight, Code, Palette, Rocket, Star, Zap, Trophy } from 'lucide-react';
 
 export default function Hero() {
@@ -62,17 +63,17 @@ export default function Hero() {
               </div>
 
               <div className="flex flex-wrap gap-4" style={{ animationDelay: '0.7s' }}>
-                <a href="#contact" className="btn-primary group relative overflow-hidden">
+                <Link to="/book" className="btn-primary group relative overflow-hidden">
                   <span className="relative z-10 flex items-center">
                     Get Started
                     <ArrowRight size={20} className="ml-2 transform group-hover:translate-x-1 transition-transform" />
                   </span>
                   <div className="absolute inset-0 bg-gradient-to-r from-[#00A9E0] to-[#00274D] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                </a>
-                <a href="#services" className="relative group overflow-hidden inline-flex items-center px-6 py-3 bg-white text-[#00274D] rounded-lg border-2 border-[#00274D] hover:text-white transition-all duration-300">
+                </Link>
+                <Link to="/services" className="relative group overflow-hidden inline-flex items-center px-6 py-3 bg-white text-[#00274D] rounded-lg border-2 border-[#00274D] hover:text-white transition-all duration-300">
                   <span className="relative z-10">View Services</span>
                   <div className="absolute inset-0 bg-[#00274D] transform -translate-x-full group-hover:translate-x-0 transition-transform duration-300" />
-                </a>
+                </Link>
               </div>
 
               <div className="grid grid-cols-3 gap-4 sm:gap-6 mt-12">
