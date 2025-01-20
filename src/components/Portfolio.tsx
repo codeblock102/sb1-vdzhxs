@@ -4,16 +4,34 @@ interface PortfolioProps {
 
 const projects = [
   {
-    title: 'Fresh & Natural',
+    title: 'Fitness Studio Website',
     category: 'Web Development',
-    image: '/assets/images/freshandnatural-min.jpg',
-    link: 'https://shiny-shortbread-2c2f0b.netlify.app/'
+    image: '/assets/images/luxury.jpg',
+    link: 'https://stately-quokka-473acc.netlify.app/'
   },
   {
-    title: 'Burger Website',
+    title: 'PowerfitMTL',
     category: 'Web Development',
-    image: '/assets/images/burgerwebsite-min.png',
-    link: 'https://burgerwebsitetemplate.netlify.app/'
+    image: '/assets/images/powerfitmtl.jpg',
+    link: 'https://aquamarine-queijadas-e81b88.netlify.app/'
+  },
+  {
+    title: 'Sweet Bliss',
+    category: 'Web Development',
+    image: '/assets/images/sweetbliss.jpg',
+    link: 'https://reliable-capybara-74b24c.netlify.app/'
+  },
+  {
+    title: 'Retro Revival',
+    category: 'Web Development',
+    image: '/assets/images/retroRevival.jpg',
+    link: 'https://effervescent-crostata-60abd9.netlify.app/'
+  },
+  {
+    title: 'Portfolio Website',
+    category: 'Web Development',
+    image: '/assets/images/bbqhaven.jpg',
+    link: 'https://gleaming-gecko-13c60c.netlify.app/'
   },
   {
     title: "A Dos D'anne",
@@ -51,6 +69,7 @@ export default function Portfolio({ projectClickHandler }: PortfolioProps) {
                     <div className="absolute bottom-0 left-0 right-0 p-6">
                       <h3 className="text-xl font-semibold text-white mb-2">{project.title}</h3>
                       <p className="text-[#00A9E0]">{project.category}</p>
+                      <span className="inline-block mt-2 text-white/80 text-sm">Click to visit site →</span>
                     </div>
                   </div>
                 </div>
