@@ -5,9 +5,24 @@ import { ArrowRight, Code, Palette, Rocket, Star, Zap, Trophy } from 'lucide-rea
 export default function Hero() {
   const [activeTab, setActiveTab] = React.useState(0);
   const features = [
-    { icon: Code, title: 'Clean Code', desc: 'Modern, maintainable code' },
-    { icon: Palette, title: 'Modern Design', desc: 'Stunning visual experiences' },
-    { icon: Rocket, title: 'Fast Launch', desc: 'Quick deployment process' }
+    { 
+      icon: Code, 
+      title: 'Clean Code', 
+      desc: 'Modern, maintainable code',
+      image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80'
+    },
+    { 
+      icon: Palette, 
+      title: 'Modern Design', 
+      desc: 'Stunning visual experiences',
+      image: 'https://images.unsplash.com/photo-1545235617-9465d2a55698?auto=format&fit=crop&w=800&q=80'
+    },
+    { 
+      icon: Rocket, 
+      title: 'Fast Launch', 
+      desc: 'Quick deployment process',
+      image: 'https://images.unsplash.com/photo-1516110833967-0b5716ca1387?auto=format&fit=crop&w=800&q=80'
+    }
   ];
 
   React.useEffect(() => {
@@ -97,9 +112,9 @@ export default function Hero() {
                   <div className="relative overflow-hidden rounded-xl">
                     <div className="absolute inset-0 bg-gradient-to-br from-[#00A9E0]/20 to-[#00274D]/20 animate-pulse" />
                     <img
-                      src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
-                      alt="Web Development"
-                      className="rounded-lg shadow-lg relative z-10 transform hover:scale-105 transition-transform duration-500"
+                      src={features[activeTab].image}
+                      alt={features[activeTab].title}
+                      className="rounded-lg shadow-lg relative z-10 transform hover:scale-105 transition-transform duration-500 w-full h-[300px] object-cover"
                     />
                   </div>
 
