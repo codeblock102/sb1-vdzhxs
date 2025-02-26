@@ -26,10 +26,10 @@ export default function Footer() {
                 <Link to="/services" className={`${isServicesPage ? 'text-gray-600 hover:text-[#00A9E0]' : 'text-gray-300 hover:text-[#00A9E0]'} transition-colors`}>Web Development</Link>
               </li>
               <li>
-                <Link to="/services" className={`${isServicesPage ? 'text-gray-600 hover:text-[#00A9E0]' : 'text-gray-300 hover:text-[#00A9E0]'} transition-colors`}>Website Redesign</Link>
+                <Link to="/services" className={`${isServicesPage ? 'text-gray-600 hover:text-[#00A9E0]' : 'text-gray-300 hover:text-[#00A9E0]'} transition-colors`}>SEO Services</Link>
               </li>
               <li>
-                <Link to="/services" className={`${isServicesPage ? 'text-gray-600 hover:text-[#00A9E0]' : 'text-gray-300 hover:text-[#00A9E0]'} transition-colors`}>SEO Optimization</Link>
+                <Link to="/services" className={`${isServicesPage ? 'text-gray-600 hover:text-[#00A9E0]' : 'text-gray-300 hover:text-[#00A9E0]'} transition-colors`}>Website Security</Link>
               </li>
             </ul>
           </div>
@@ -68,7 +68,7 @@ export default function Footer() {
                 <Instagram size={24} />
               </a>
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/company/blanq-digital/posts/?feedView=all" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className={`${isServicesPage ? 'text-gray-600 hover:text-[#00A9E0]' : 'text-gray-300 hover:text-[#00A9E0]'} transition-colors transform hover:scale-110`}
